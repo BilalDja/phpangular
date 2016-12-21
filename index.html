@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-app="app">
+    <div class="container" ng-controller="MainController as vm">
+        <h1>Welcome</h1>
+        <form>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" ng-model="vm.username" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" ng-model="vm.password" class="form-control" />
+            </div>
+            <button
+                    type="button"
+                    class="btn btn-success"
+                    style="margin-top: 10px"
+                    ng-click="vm.login()">Login</button>
+        </form>
+    </div>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
